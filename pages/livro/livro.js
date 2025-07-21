@@ -58,7 +58,7 @@ form.addEventListener('submit', async (e) => {
       await livroService.salvarLivro(livro)
       alert('Livro criado com sucesso!')
     }
-    window.location.href = "/trabalhoweb1/pages/home/home.html";
+    window.location.href = "/pages/home/home.html";
   } catch (err) {
     alert('Erro ao salvar livro: ' + err.message)
   }
