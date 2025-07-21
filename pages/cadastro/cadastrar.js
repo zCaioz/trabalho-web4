@@ -48,7 +48,7 @@ function cadastrar() {
         .then(data => {
             pos_carregamento()
             if (data.success) {
-                window.location.href = "/trabalhoweb1/pages/home/home.html"
+                window.location.href = "/pages/home/home.html"
             } else if (data.code === "EMAIL_IN_USE") {
                 alert("Email já cadastrado!")
             } else {
