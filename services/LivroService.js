@@ -118,6 +118,7 @@ export class LivroService {
     async recuperarLivros() {
         const response = await fetch(this.path, {
             method: 'GET',
+            credentials: 'include' ,
             headers: { 'Accept': 'application/json' }
         })
 
