@@ -56,7 +56,7 @@ form.addEventListener('submit', async (e) => {
             await discoService.salvarDisco(disco)
             alert('Disco criado com sucesso!')
         }
-        window.location.href = "/trabalhoweb1/pages/home/home.html";
+        window.location.href = "/pages/home/home.html";
     } catch (err) {
         alert('Erro ao salvar disco: ' + err.message)
     }
