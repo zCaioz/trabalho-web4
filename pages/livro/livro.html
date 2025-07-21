@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Criar / Editar Livro</title>
+  <link rel="stylesheet" href="../../global.css" />
+  <link rel="stylesheet" href="livro.css" />
+  <script src="livro.js" type="module" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <button id="btn-voltar">Voltar</button>
+  </header>
+
+  <form id="livro-form" novalidate>
+    <label for="titulo">Título</label>
+    <div id="titulo-container">
+      <input type="text" id="titulo" name="titulo" required />
+    </div>
+
+    <label for="autor">Autor</label>
+    <div id="autor-container">
+      <input type="text" id="autor" name="autor" required />
+    </div>
+
+    <label for="numeroPaginas">Número de Páginas</label>
+    <div id="numeroPaginas-container">
+      <input type="number" id="numeroPaginas" name="numeroPaginas" min="1" required />
+    </div>
+
+    <label for="editora">Editora</label>
+    <div id="editora-container">
+      <input type="text" id="editora" name="editora" required />
+    </div>
+
+    <label for="anoPublicacao">Ano de Publicação</label>
+    <div id="anoPublicacao-container">
+      <input type="number" id="anoPublicacao" name="anoPublicacao" min="1000" max="9999" required />
+    </div>
+
+    <button type="submit" id="btn-salvar">Salvar</button>
+  </form>
+
+</body>
+
+</html>
